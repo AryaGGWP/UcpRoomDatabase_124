@@ -11,17 +11,17 @@ import kotlinx.coroutines.flow.Flow
 @Dao
 interface JadwalDao {
     @Insert
-    suspend fun  insertJadwal(jadwal: Jadwal)
+    suspend fun  insertJadwal(jadwal: Jadwal): Long
 
     @Query("SELECT * FROM Jadwal ORDER BY namaPasien ASC")
     fun getAllJadwal() : Flow<List<Jadwal>>
 
-    @Query("SELECT * FROM Jadwal WHERE jadwalId = :jadwalId")
-    fun getJadwal(jadwalId:String) : Flow<Jadwal>
+    @Query("SELECT * FROM Jadwal WHERE id = :jadwalId")
+    fun getJadwal(jadwalId: Int) : Flow<Jadwal?>
 
     @Delete
-    suspend fun deleteJadwal(jadwal: Jadwal)
+    suspend fun deleteJadwal(jadwal: Jadwal): Int
 
     @Update
-    suspend fun updateJadwal(jadwal: Jadwal)
+    suspend fun updateJadwal(jadwal: Jadwal): Int
 }
