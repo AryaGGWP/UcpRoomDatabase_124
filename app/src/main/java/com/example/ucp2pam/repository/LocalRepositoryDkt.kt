@@ -10,10 +10,6 @@ class LocalRepositoryDkt(private val dokterDao: DokterDao): RepositoryDkt {
         }
 
     override fun getAllDkt(): Flow<List<Dokter>>{
-        return dokterDao.getAllDokterName()
-    }
-
-    override fun getDkt(dokterId: Int): Flow<Dokter>{
-        return dokterDao.getDokter(dokterId)
+        return dokterDao.getAllDokter()
     }
 }

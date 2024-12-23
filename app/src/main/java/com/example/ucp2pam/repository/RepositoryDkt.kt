@@ -5,6 +5,5 @@ import kotlinx.coroutines.flow.Flow
 
 interface RepositoryDkt {
     suspend fun insertDkt(dokter: Dokter)
-    fun getDkt(idDkt: Int): Flow<Dokter>
-    fun getAllDkt(): Flow<List<Dokter>>
+    fun getAllDkt(): Flow<List<Dokter?>>
 }

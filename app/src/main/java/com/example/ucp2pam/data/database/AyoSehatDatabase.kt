@@ -23,7 +23,7 @@ abstract class AyoSehatDatabase : RoomDatabase() {
                 Room.databaseBuilder(
                     context.applicationContext,
                     AyoSehatDatabase::class.java,
-                    "AyoSehatDatabase"
+                    "AyoSehat"
                 )
                     .build().also { Instance = it }
             })
