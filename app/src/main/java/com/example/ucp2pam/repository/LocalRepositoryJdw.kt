@@ -14,7 +14,7 @@ class LocalRepositoryJdw(private val jadwalDao: JadwalDao) : RepositoryJdw {
     override suspend fun deleteJdw(jadwal: Jadwal){
         jadwalDao.deleteJadwal(jadwal)
     }
-    override fun getJdw(idJadwal: Int): Flow<Jadwal?> {
+    override fun getJdw(idJadwal: Int): Flow<Jadwal> {
         return jadwalDao.getJadwal(idJadwal)
     }
     override fun getAllJdw(): Flow<List<Jadwal>> {
