@@ -11,3 +11,4 @@ Edit Jadwal ![image](https://github.com/user-attachments/assets/6eb8f081-74f4-44
 ![image](https://github.com/user-attachments/assets/67f6b65b-1e74-45f4-b207-6e07ac439083)
 Delete Jadwal ![image](https://github.com/user-attachments/assets/74340b36-1b80-45ad-b3d8-c8513fc5a4dc)
 ![image](https://github.com/user-attachments/assets/67f6b65b-1e74-45f4-b207-6e07ac439083)
+link video : https://drive.google.com/file/d/1LpWW6x3EhxsoN76fIsyINpkqlxjV8t-e/view?usp=drive_link
